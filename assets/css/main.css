@@ -1,0 +1,421 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+@import url('variables.css');
+@import url('base.css');
+
+@import url('components/flex-grid.css');
+@import url('components/buttons.css');
+@import url('components/forms.css');
+
+*{
+    padding: 0;
+    margin: 0;
+  }
+
+ header{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: var(--t-primary);
+  }
+
+  body {
+    font-family: var(--t-secondary);
+  }
+
+  .bosfoto{
+    background-image: url("../images/bosenlogo.png");
+    background-size: cover;
+    object-fit: cover;
+    height: 100vh;
+  }
+
+  .donkerzwart{
+    display: flex;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    height: 3rem;
+    justify-content: space-between;
+  }
+
+  .gegevens{
+    display: flex;
+    align-self: center;
+    padding: 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .space{
+    padding-left: 25px;
+    font-size: 12pt;
+    font-weight: lighter;
+  }
+
+  .welkom{
+    display: flex;
+    align-self: center;
+    padding: 1rem;
+    margin-left: 5rem;
+    font-weight: lighter;
+  }
+
+.kleinLogo{
+  max-width: 7rem;
+  max-height: auto;
+  object-fit: cover;
+}
+
+.lichtzwart{
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  color: white;
+  height: 4rem;
+  justify-content: space-between;
+}
+
+.blok1{
+
+  display: inline-block;
+  align-self: center;
+  padding: 1rem;
+  margin-left: 5rem;
+  padding: 1rem;
+  width: auto;
+  height: auto;
+
+}
+.blok2{
+  display: inline-block;
+  align-self: center;
+  font-size:16pt;
+  justify-content: space-between;
+}
+
+
+
+  nav ul{
+    list-style: none;
+  }
+
+ nav ul.mainnav {
+   list-style: none;
+   display: flex;
+   justify-content: flex-end;
+   margin-right: 5rem;
+
+ }
+
+a{
+  margin-left:3rem;
+  margin-right:3rem;
+}
+
+.contactMargin{
+  margin-right:0rem;
+}
+
+ nav ul.mainnav li a {
+   display: inline-block;
+   padding-right: 15px;
+   padding-left:15px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   color: #f1f2f6;
+ }
+
+ nav ul.dropdown {
+  position: absolute;
+  display: none;
+  background-color: rgba(0,0,0,0.5);
+
+}
+nav ul.dropdown li:hover a{
+  text-decoration:underline;
+}
+
+nav ul.mainnav li.active a{
+  text-decoration: underline;
+}
+
+ nav ul.mainnav li.hasdropdown:hover ul.dropdown {
+   display: inline-block;
+
+ }
+
+ a:link,
+ a:visited
+ a:hover {
+   text-decoration: inherit;
+   color: inherit;
+ }
+
+ .pijl{
+   color: white;
+   font-size: 50px;
+   text-decoration: none;
+   background-color: transparent;
+   text-align: center;
+   display: block;
+   margin-top: 75vh;
+ }
+
+ .pijlkleur{
+   color: white;
+ }
+
+ /*main*/
+
+ /*over het bladerbos*/
+
+ #main{
+   margin: 5rem;
+ }
+
+ p{
+  Line-height: 10mm;
+ }
+
+ h1{
+   color: var(--c-primary);
+   font-family: var(--t-primary);
+   font-size: 18pt;
+   padding-top: 2rem;
+
+ }
+
+ .InfoBlok{
+  display: flex;
+  flex-direction:  column;
+ }
+
+.infoblokordenen{
+  display: flex;
+}
+ .tekstblok0{
+  padding-left: 3rem;
+ }
+
+ .tekstblok1{
+  display: flex;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-right: 3rem;
+ }
+
+ .tekstblok2{
+  display: flex;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-left:3rem;
+}
+
+/*accommodatie*/
+.AccommodatieBlok{
+  margin-top: 5rem;
+  display: flex;
+  background-color: var(--c-secondary)
+}
+
+.fotolinks{
+  display:flex;
+  max-height: 470px;
+  max-width: 50%;
+}
+
+.rechts{
+  display: flex;
+  flex-direction: column;
+}
+
+.titelrechts{
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: flex;
+}
+
+.tektstrechts{
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: flex;
+}
+
+
+.fotoInBlok{
+  height: auto;
+  object-fit: cover;
+  overflow:hidden;
+}
+
+/*natuur*/
+
+.NatuurBlok{
+  margin-top: 5rem;
+  display: flex;
+  background-color: var(--c-secondary)
+}
+
+/*activiteiten*/
+
+.ActiviteitenBlok{
+  margin-top: 5rem;
+  display: flex;
+  background-color: var(--c-secondary)
+}
+
+.fotorechts{
+  display:flex;
+  max-height: 470px;
+  max-width: 50%;
+}
+
+.links{
+  display: flex;
+  flex-direction: column;
+}
+
+.titellinks{
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: flex;
+}
+
+.tekstlinks{
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: flex;
+}
+
+/*footer*/
+
+footer{
+  background-image: url("../images/bos.jpg");
+  background-size: cover;
+  object-fit: cover;
+  height: auto;
+  width: auto;
+ color: transparent;
+  font-family: var(--t-primary);
+}
+
+/*deel1*/
+
+.ophoogte{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.blijfOpDeHoogte{
+  display: flex;
+  align-self: center;
+  align-items: center;
+  height:5rem;
+  font-size: 20pt;
+  font-weight: bold;
+  color: white;
+}
+
+.invullenaub{
+  display: flex;
+  height: 5rem;
+  margin-bottom:2rem;
+  justify-content: center;
+}
+
+.invulveld{
+  display:flex;
+  align-self: center;
+}
+
+.kaderken{
+  text-align: center;
+  width: 12rem;
+  height: 3rem;
+  border:none;
+  margin: 1rem;
+  text-decoration: none;
+  list-style:none;
+}
+
+.button{
+  text-align: center;
+  width: 12rem;
+  height: 3rem;
+  background-color:white;
+  border:none;
+  margin: 1rem;
+  text-decoration: none;
+  background-color: var(--c-primary);
+}
+
+/*deel2*/
+
+.algemeneinfo{
+  color: white;
+  background-color: rgba(0,0,0,0.8);
+  display: flex;
+  height: 10rem;
+  font-size: 14pt;
+  justify-content: center;
+}
+
+.contacten{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.betaalmogelijkheden{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.volgen{
+  display:flex;
+  flex-direction: column;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  align-self: center;
+}
+
+#iconen{
+font-size: 24pt;
+padding: 1rem;
+}
+
+.centreren{
+  display:flex;
+  align-items: center;
+  align-self: center;
+}
+
+.boldzetten{
+  font-weight: bold;
+}
+
+.lighter{
+  font-weight: lighter;
+}
+
+/*deel3*/
+
+.einde{
+  color: white;
+  display:flex;
+  flex-direction: column;
+  background-color: rgba(0,0,0,1);
+}
+
+.eindcredit{
+  display: flex;
+  font-size: 10pt;
+  height: 4rem;
+  align-items: center;
+  align-self: center;
+}
